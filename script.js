@@ -155,5 +155,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 document.getElementById('return-home').addEventListener('click', () => {
-  window.location.href = ',,/welcome-menu/index.html';
+  window.location.href = 'https://isaacthesoap.github.io/welcome';
 });
+
