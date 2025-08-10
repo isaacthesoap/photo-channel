@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Channel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="return-home">Return to Welcome Menu</button>
+  <div class="container">
+	<div class="preview-img">
+      <img id="image" src="image-placeholder.svg" alt="preview">
+    </div>
+    <div class="editor-panel">
+      <label>Effects</label>
+      <div class="options">
+        <button id="brightness">Brighten</button>
+        <button id="contrast">Contrast</button>
+        <button id="invert">Zap!</button>
+        <button id="grayscale">Black and White</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="reset">Reset</button>
+      <input type="file" id="upload" accept="image/*" hidden>
+      <button onclick="document.getElementById('upload').click()">Choose Image</button>
+      <button id="save">Save</button>
+    </div>
+  </div>
+  
+ <audio id="hoverSound" src="snd/hover.mp3" preload="auto"></audio>
+<audio id="clickSound" src="snd/click.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+<audio id="bgm" src="snd/bgm.mp3" loop></audio>
+</html>
